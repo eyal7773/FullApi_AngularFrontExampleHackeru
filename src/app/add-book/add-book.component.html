@@ -1,0 +1,20 @@
+<h1>Add new book</h1>
+
+<form [formGroup]="bookForm"  (ngSubmit)="saveBook()" >
+    <label for="title">
+        Title
+        <input type="text" id="title" name="title" formControlName="title">
+    </label>
+    <br>
+    <br>
+    <label for="description">
+        Description
+        <input type="text" id="description" name="description"  formControlName="description" >
+    </label>
+    <br>
+    <br>
+    <br>
+    <input type="submit" value="Save">
+</form>
+
+
